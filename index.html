@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/styles.css" rel="stylesheet">
+<title>XING search form</title>
+</head>
+
+<body>
+	<div id = "content">
+    <div id="formMessage"></div>
+  	<form id = "formXing">
+      	<p>For a better working life <br/> The new XING Jobs</p>
+        <div id = "searchBar">
+          <input type="text" id = "keyword" autocomplete="off" placeholder="Enter keyword">
+          <select class = "category">
+          </select>
+        </div>
+        <div class="dropdown">
+          <input type="text" id = "location" autocomplete="off" placeholder="Location">
+          <div id = "suggestions"></div>
+        </div>
+        <input type="submit" value="Search" class ="confirmButton" id = "search">
+        <div id = "categoryList">
+          <div id = "topCategoriesTitle"><p>Top Categories</p></div> <div id = "allCategories">Search in all categories</div>
+          <div id = "topCategories">
+            <table >
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" value="IT and telecommunication"><div class = 'columnText'>IT and telecommunication (4440)</div></td>
+                  <td><input type="checkbox" value="Other"><div class = 'columnText'>Other (3636)</div></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value="Sales and commerce"><div class = 'columnText'>Sales and commerce (3262)</div></td>
+                  <td><input type="checkbox" value="Engineering / technical"><div class = 'columnText'>Engineering / technical (2652)</div></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value="Production, construction and trade"><div class = 'columnText'>Production, construction and trade (2586)</div></td>
+                  <td><input type="checkbox" value="Health medical and social"><div class = 'columnText'>Health medical and social (2130)</div></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value="Management / executive and strategic management"><div class = 'columnText'>Management / executive and strategic management(1982)</div></td>
+                  <td><input type="checkbox" value="Finance and accounting"><div class = 'columnText'>Finance and accounting (1979)</div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>More Categories</p>
+          <div id = "moreCategories">
+            <table>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" value="Not categorized"><div class = 'columnText'>Not categorized (1468)</div></td>
+                  <td><input type="checkbox" value="Administration"><div class = 'columnText'>Administration (1439)</div></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value="Banking, insurance and financial services"><div class = 'columnText'>Banking, insurance and financial services (1342)</div></td>
+                  <td><input type="checkbox" value="Marketing and advertising"><div class = 'columnText'>Marketing and advertising (1304)</div></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value="Purchasing, transport and logistics"><div class = 'columnText'>Purchasing, transport and logistics (719)</div></td>
+                  <td><input type="checkbox" value="Training/instruction"><div class = 'columnText'>Training/instruction (547)</div></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value="eCommerce"><div class = 'columnText'>eCommerce (982)</div></td>
+                  <td><input type="checkbox" value="Aerospace"><div class = 'columnText'>Aerospace (179)</div></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value="Energy"><div class = 'columnText'>Energy (182)</div></td>
+                  <td><input type="checkbox" value="News media"><div class = 'columnText'>News media (149)</div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </form>
+    </div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/searchForm.js"></script>
+</html>
